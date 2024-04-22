@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: -webkit-marquee;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: slow;
+}
+
+*::selection {
+    --colors-pink: rgb(243, 182, 230);
+    background: var(--colors-pink);
+    color: rgb(249, 206, 236);
+    -webkit-text-fill-color: #101026;
+}
+
+@font-face {
+    font-family: 'Aron-Normal';
+    src: url(../Fonts/Aron-Normal.ttf) format('truetype');
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #000001;
+    height: auto;
+}
+
+/* Page Settings */
+
+/* Main Settings */
+
+main {
+    max-width: 860px;
+    display: flex;
+    margin-inline: auto;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 24vh;
+
+    margin-bottom: 100px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 860px;
+
+    margin-inline: auto;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 860px;
+    gap: 20px;
+
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 420px;
+    height: 420px;
+    max-width: 420px;
+    max-height: 420px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #101010;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border: 1px solid #FFFFFF;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.card:active {
+    border: 1px solid #F9CEEE;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.card_container {
+    height: 418px;
+    width: 418px;
+
+    max-height: 420px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+}
+
+.card_name_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card_name {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Aron-Normal';
+    font-weight: 400;
+    letter-spacing: -3%;
+}
+
+.show-cards{
+    color: white;
+    background-color: #000001;
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+    font-size: 16px;
+
+    max-width: 420px;
+    width: 420px;
+    font-family: 'Roboto', sans-serif;
+    height: 44px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.show-cards:hover {
+    background-color: #FFFFFF;
+    color: #000001;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.show-cards:active {
+    border: 1px solid #000001;
+    background-color: #F9CEEE;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.none {
+    display: none;
+}
+
+.ErrorMess {
+    cursor: pointer;
+
+    margin-top: 17vh;
+    margin-bottom: 22vh;
+}
+
+.ErrorMess:hover .ErrorMess_name {
+    gap: 24px;
+    color: #FE3D2C;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.ErrorMess:hover .click {
+    color: #FE3D2C;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.ErrorMess:active .click {
+    color: #FF1500;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.ErrorMess:active .ErrorMess_name {
+    gap: 34px;
+    color: #FF1500;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.ErrorMess_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 14px;
+}
+
+.ErrorMess_name {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    transition: all 0.3s;
+    color: #F26457;
+}
+
+.ErrorMess_name p {
+    font-size: 64px;
+    line-height: 100%;
+    font-family: 'Aron-Normal';
+    font-weight: 400;
+    letter-spacing: -3%;
+}
+
+.fix {
+    color: #444444;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 420px;
+}
+
+.click {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+.ErrorMess_discription {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

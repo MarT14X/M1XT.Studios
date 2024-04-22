@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: -webkit-marquee;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: slow;
+}
+
+*::selection {
+    --colors-pink: rgb(243, 182, 230);
+    background: var(--colors-pink);
+    color: rgb(249, 206, 236);
+    -webkit-text-fill-color: #101026;
+}
+
+@font-face {
+    font-family: 'Aron-Normal';
+    src: url(../Fonts/Aron-Normal.ttf) format('truetype');
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #000001;
+    height: auto;
+}
+
+/* Page Settings */
+
+/* Main Settings */
+
+
+/* Main Settings */
+
+main {
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.section_container {
+    display: flex;
+    margin-top: 16vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section_info {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 155px;
+}
+
+.section_info_name {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section_mail_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section_socmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section_socmedia_container {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
+
+.section_name p {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Aron-Normal';
+    font-weight: 400;
+}
+
+.section_disc p {
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 310px;
+}
+
+.section_mail_text p {
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 310px;
+}
+
+.section_info a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    text-decoration: none;
+    transition: all 0.3s
+}
+
+
+.section_info a:hover {
+    color: #F9CEEE;
+    text-decoration: underline;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.section_info a:active {
+    color: #343434;
+    text-decoration: underline;
+}
+
+.section_socmedia_name p {
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 310px;
+}
+
+
+.section_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    max-height: 464px;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.text_field_input {
+    height: 74px;
+    width: 420px;
+
+    margin-bottom: 0;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #101010;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    padding-left: 14px;
+    font-family: 'Aron-Normal';
+
+    transition: all 0.3s;
+
+    &:hover {
+        border-bottom: 1px solid #F9CEEE;
+        transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+    }
+
+    &:valid {
+        border-bottom: 1px solid #02E663;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #00000029;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+.text_area {
+    max-width: 420px;
+    width: 420px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 0;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #101010;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+
+    padding-left: 14px;
+    padding-top: 14px;
+    font-family: 'Aron-Normal';
+
+    transition: all 0.3s;
+
+    &:hover {
+        border-bottom: 1px solid #F9CEEE;
+        transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+    }
+}
+
+.form_btn {
+    max-width: 420px;
+    width: 420px;
+    height: 44px;
+
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000001;
+
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.form_btn:hover {
+    background-color: #F9CEEE;
+    border: #000001;
+}
+
+.form_btn:active {
+    background-color: #343434;
+    color: #FFFFFF;
+}

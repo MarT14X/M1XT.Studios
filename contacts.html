@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1XT.Inc/Contacts</title>
+
+    <link rel="stylesheet" href="./Styles/contacts.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Imges/Web-Icon/weblogo.svg" type="image/x-icon">
+    <link rel="preconnect" href="./Fonts/Aron-Normal.ttf">
+</head>
+
+<body>
+    <special-header></special-header>
+
+    <main>
+        <div class="section_container">
+            <div class="section_info">
+                <div class="section_info_name">
+                    <div class="section_name">
+                        <p>
+                            Any ideas?
+                        </p>
+                    </div>
+
+                    <div class="section_disc">
+                        <p>
+                            If you have any questions or need help with the project, feel free to contact us! We are
+                            always happy to help you turn your ideas into a work of art.
+                        </p>
+                    </div>
+
+                    <div class="section_mail_container">
+                        <div class="section_mail_text">
+                            <p>
+                                Or contact us directly:
+                            </p>
+                        </div>
+
+                        <div class="section_mail_btn">
+                            <a href="mailto:m1xt_studio@list.ru">
+                                m1xt_studio@list.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_socmedia">
+                    <div class="section_socmedia_name">
+                        <p>
+                            Our social networks:
+                        </p>
+                    </div>
+
+                    <div class="section_socmedia_container">
+                        <a href="https://www.artstation.com/mart14x">
+                            ArtStation
+                        </a>
+
+                        <a href="https://www.behance.net/martinbalabkin">
+                            Behance
+                        </a>
+
+                        <a href="https://github.com/MarT14X">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="redirect" value="./succes.html">
+                    <input type="hidden" name="access_key" value="f3849326-c858-4689-9327-19093757afd8">
+
+                    <div class="inp_field">
+                        <input class="text_field_input" type="text" name="name" placeholder="Full Name*" required>
+                        <label for="text-field_label">Full Name</label>
+                    </div>
+
+                    <div class="inp_field">
+                        <input class="text_field_input" type="email" name="email" placeholder="Email*" required>
+                        <label for="inp_field_text">Email</label>
+                    </div>
+
+                    <div class="inp_field">
+                        <textarea class="text_area" name="text" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+                        <label for="inp_field_text">Massage</label>
+                    </div>
+
+                    <button type="submit" class="form_btn" style="cursor: pointer;">Send</button>
+                    <div class="status"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script src="./Scripts/Footer.js"></script>
+<script src="./Scripts/Header.js"></script>
+<script src="./Scripts/send.js"></script>
+
+</html>

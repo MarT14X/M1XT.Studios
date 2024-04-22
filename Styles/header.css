@@ -1,0 +1,231 @@
+/* Header Settings */
+
+.menu-opn {
+    height: 100vh;
+    width: 100%;
+    background-color: #000001;
+    z-index: 997;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.92, 0.02);
+    visibility: hidden;
+}
+
+.menu-opn.active{
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0, 0, 0.62, 0.02);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-footer {
+    height: 60px;
+    width: 1320px;
+    border-top: 1px solid #444444;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.menu-footer-cont {
+    display: flex;
+    justify-content: space-between;
+    color: #444444;
+    height: 17px;
+}
+
+.menu-footer-cont p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.menu-container {
+    margin-top: 30vh;
+    max-width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    justify-content: center;
+}
+
+.menu-frmae-list {
+    height: 70px;
+    color: #444444;
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: 7.04px;
+    position: relative;
+    opacity: 0.3;
+}
+
+.menu-frmae-list:hover {
+    color: #F9CEEE;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: all 0.2s cubic-bezier(0, 0, 1.02, 0.02);
+}
+
+.menu-frmae-list:active {
+    color: #343434;
+}
+
+.bottom-line {
+    background-color: #F9CEEE;
+    opacity: 1;
+    height: 2px;
+    width: 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s
+}
+
+.bottom-line p {
+    font-family: 'Aron-Normal';
+    font-weight: 600;
+}
+
+.menu-frmae-list:hover .bottom-line{
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.menu-frame {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+header {
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 4;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.header-container {
+    width: 1320px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-container p {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s
+}
+
+.header-container p:hover {
+    color: #F9CEEE;
+    transition: all 0.3s
+}
+
+.header-container p:active {
+    color: #343434;
+}
+
+#Logo p {
+    text-decoration: underline;
+}
+
+#Logo {
+    z-index: 999;
+}
+
+.menu {
+    display: flex;
+    z-index: 999;
+    transition: all 0.3s
+}
+
+.menu:hover {
+    color: #F9CEEE;
+    transition: all 0.3s
+}
+
+.menu:active {
+    color: #343434;
+}
+
+.menu-dot:hover .header-container p{
+    color: #F9CEEE;
+}
+
+.menu-dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    transition: 0.4s;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    z-index: 99;
+    
+}
+
+.menu-dots {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 14px;
+}
+
+.menu:hover .header-container p{
+    color: #F9CEEE;
+    transition: all 0.3s
+}
+
+.menu:hover .menu-dot {
+    transition: 0.3s;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, -8);
+    background-color: #F9CEEE;
+}
+
+.menu:hover .menu-dot:nth-child(1) {
+    transition-delay: 140ms;
+}
+
+.menu:hover .menu-dot:nth-child(2) {
+    transition-delay: 240ms;
+}
+
+.menu:hover .menu-dot:nth-child(3) {
+    transition-delay: 340ms;
+}
+
+
+
+/* Header Settings */

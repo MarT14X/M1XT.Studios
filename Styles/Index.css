@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: -webkit-marquee;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: slow;
+}
+
+*::selection {
+    --colors-pink: rgb(243, 182, 230);
+    background: var(--colors-pink);
+    color: rgb(249, 206, 236);
+    -webkit-text-fill-color: #101026;
+}
+
+@font-face {
+    font-family: 'Aron-Normal';
+    src: url(../Fonts/Aron-Normal.ttf) format('truetype');
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #000001;
+    height: auto;
+}
+
+/* Page Settings */
+
+
+/* Main Settings */
+
+
+main {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero_section {
+    max-width: 1080px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 34vh;
+    margin-bottom: 80vh;
+}
+
+#hero_vid {
+    max-height: 200px;
+    max-width: 1080px;
+}
+
+.under_hero_container {
+    display: flex;
+    gap: 30px;
+}
+
+.under_hero_discription {
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.slogan_section {
+    margin-top: 50vh;
+    margin-bottom: 60vh;
+}
+
+.slogan_container {
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.slogan_text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.slogan_text_section > * {
+    margin: 0;
+}
+
+.slogan_text span {
+    color: hsl(0 0% 100% / 0.2);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-image: linear-gradient(90deg, #FFFFFF, #F9CEEE);
+    animation: slogan_text_section forwards;
+    animation-timeline: view(y);
+    font-size: 64px;
+    font-family: 'Aron-Normal';
+    text-align: center;
+    line-height: 70px;
+}
+
+.slogan_text_section span {
+    animation-range-start: cover 14%;
+    animation-range-end: cover 100%;
+}
+
+@keyframes slogan_text_section {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+
+
+.video_scroll_section {
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70vh;
+}
+
+#scrolly-video {
+    max-height: 733px;
+    max-width: 1300px;
+}
+
+
+.video_scroll_container {
+    height: 550vh;
+    width: 1300px;
+    margin-inline: auto;
+}
+
+
+.btn {
+    height: 44px;
+    width: 420px;
+    background-color: #000001;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    position: relative;
+    transition: all 0.3s
+}
+
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #000001;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.btn:active {
+    border: 1px solid #000001;
+    background-color: #F9CEEE;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+
+
+
+
+
+.ham_menu_section {
+    margin-inline: auto;
+    margin-bottom: 70%;
+}
+
+.ham_menu_container {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.menu_section {
+    width: 860px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+
+    border-bottom: 1px solid #101010;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+
+    grid-template-rows: 0fr;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: all 200ms;
+}
+
+.menu_section_name_and_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 810px;
+}
+
+.menu_section_name_container {
+    width: 800px;
+}
+
+
+.menu_section_number p {
+    font-family: 'Aron-Normal';
+    font-size: 20px;
+    text-align: left;
+    max-width: 30px;
+    color: #FFFFFF;
+    transition: all 200ms;
+}
+
+.menu_section_number {
+    max-width: 30px;
+}
+
+.menu_section_name h3 {
+    font-family: 'Aron-Normal';
+    font-weight: 100;
+    font-size: 64px;
+    text-align: left;
+    color: #FFFFFF;
+    line-height: 40px;
+    transition: all 200ms;
+}
+
+.menu_drop_discription {
+    color: #FFFFFF;
+    margin-left: 88px;
+    margin-right: 90px;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+}
+
+.menu_drop_discription h4 {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.menu_section {
+    display: grid;
+    max-width: 860px;
+    margin-inline: auto;
+    grid-template-rows: 0fr;
+    display: flex;
+}
+
+.menu_drop_discription > div {
+    overflow: hidden;
+}
+
+
+.menu_section:hover {
+    grid-template-rows: 1fr;
+}
+
+.menu_section.open .menu_drop_discription {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.menu_section_btn {
+    position: relative;
+    transition: all 200ms;
+}
+
+.menu_section.open .menu_section_number p{
+    color: #F9CEEE;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.menu_section.open .menu_section_name h3 {
+    color: #F9CEEE;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+.menu_section.open .menu_section_btn{
+    rotate: 45deg;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+}
+
+
+
+.contact_section {
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 50vh;
+    max-width: 860px;
+}
+
+
+.contact_container {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Aron-Normal';
+    font-weight: 300;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s
+}
+
+.under_contact_container {
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.contact_section_container:hover .contact_container{
+    gap: 35px;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+    color: #F9CEEE;
+}
+
+.contact_section_container:active .contact_container{
+    gap: 45px;
+    transition: all 0.2s cubic-bezier(0, 0, 1.04, 0.02);
+    color: #343434;
+}
+/* Main Settings */

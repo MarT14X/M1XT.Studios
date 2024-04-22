@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: -webkit-marquee;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: slow;
+}
+
+*::selection {
+    --colors-pink: rgb(243, 182, 230);
+    background: var(--colors-pink);
+    color: rgb(249, 206, 236);
+    -webkit-text-fill-color: #101026;
+}
+
+@font-face {
+    font-family: 'Aron-Normal';
+    src: url(../Fonts/Aron-Normal.ttf) format('truetype');
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #000001;
+    height: auto;
+}
+
+/* Page Settings */
+
+/* Main Settings */
+
+main {
+    max-width: 1300px;
+    margin-inline: auto;
+    margin-top: 16vh;
+    margin-bottom: 100px;
+}
+
+.card_product_img {
+    height: 600px;
+    width: 1300px;
+    max-width: 1300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product_title_disc {
+    max-width: 1080px;
+    width: 1080px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.product_title_name {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-family: 'Aron-Normal';
+    font-weight: 500;
+    letter-spacing: -3%;
+}
+
+.product_disc_container {
+    display: flex;
+    max-width: 1080px;
+    width: 1080px;
+    max-height: 14px;
+    height: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_sub_title {
+    color: #ADAEBC;
+    font-size: 16px;
+    font-family: 'Aron-Normal';
+    font-weight: 400;
+    letter-spacing: -3%;
+}
+
+.card_product_title_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product_content_section {
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.product_content_container {
+    max-width: 860px;
+    border-bottom: 1px solid #101010;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
+}
+
+.product_content_title {
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.product_content_img {
+    height: 427px;
+    width: 100%;
+    max-width: 860px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product_content_img_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card_product_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.product_content_img_full_size {
+    height: 444px;
+    width: 860px;
+    max-width: 860px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product_content_img_container_outside {
+    display: flex;
+    flex-direction: column;
+}
