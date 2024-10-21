@@ -233,6 +233,7 @@ header {
     .header-container {
         width: 373px;
         margin-top: 4px;
+        height: 20px;
     }
 
     .menu-container {
