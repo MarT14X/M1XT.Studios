@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Mustang GT 1967",
+        "img": "Mustang1.webp",
+        "descr": "The old legend will continue to live on.",
+        "pubdate": "14.04.2024",
+        "cont_title_1": "In 1969, the Mustang was restyled to add more heft to the body, with increased length, width, and weight. The quad headlamps were introduced, along with a new logo on the grille. The car featured convex side panels and the fastback version was called SportsRoof.",
+        "cont_title_2": "The creation of this model was made possible through the use of various software programs, including Blender 3D and Adobe Photoshop/Lightroom, and was inspired by the original LEGO_car.",
+        "cont_title_3": "The process of developing the model started with a relatively brief period of time, but as the model was created, a texturing and shading phase was initiated. This phase took longer due to the numerous variations and stylistic elements for this model. After the completion of this phase, the next step involved setting up and configuring the camera composition, which added to the overall complexity of the project and required additional time and attention to detail.",
+        "img_1": "Mustang2.webp",
+        "img_2": "Mustang3.webp",
+        "img_3": "Mustang4.webp"
+    },
+
+    {
+        "id": 2,
+        "title": "GreenMons & Punbly -X1",
+        "img": "Greenmons1.webp",
+        "descr": "DataBase",
+        "pubdate": "19.01.2024"
+    },
+
+    {
+        "id": 3,
+        "title": "Quenuty - X4 - M1",
+        "img": "SpaceBabyWals1.webp",
+        "descr": "L",
+        "pubdate": "19.01.2024"
+    },
+
+    {
+        "id": 2,
+        "title": "GreenMons & Punbly -X1",
+        "img": "Greenmons1.webp",
+        "descr": "L",
+        "pubdate": "19.01.2024"
+    },
+
+    {
+        "id": 3,
+        "title": "Quenuty - X4 - M1",
+        "img": "SpaceBabyWals1.webp",
+        "descr": "L",
+        "pubdate": "19.01.2024"
+    }
+]
